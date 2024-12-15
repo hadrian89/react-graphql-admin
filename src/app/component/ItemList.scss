@@ -1,0 +1,19 @@
+.main-container {
+  height: 100vh;
+  width: 80%;
+  margin: 0 auto;
+}
+.list {
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  &.table {
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  &.loading {
+    justify-content: center;
+    align-items: center;
+  }
+}

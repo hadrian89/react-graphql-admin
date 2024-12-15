@@ -1,0 +1,12 @@
+.item-container {
+  width: 30%;
+  margin: 1rem;
+  .action-container {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    .edit-button {
+      margin-right: 1rem;
+    }
+  }
+}
