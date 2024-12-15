@@ -14,8 +14,8 @@ React 18 Boilerplate with React 18, Webpack 6, Bootstrap 5, HMR, using babel, Je
 ## Installation
 
 ```
-git clone https://github.com/altafino/react-webpack-5-bootstrap-5.git
-cd react-webpack-5-bootstrap-5
+git clone git@github.com:hadrian89/react-graphql-admin.git
+cd react-graphql-admin
 yarn / npm i
 ```
 
