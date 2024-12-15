@@ -9,4 +9,9 @@ dotenv.config();
 module.exports = {
   dbUrl: process.env.MONGO_URI,
   port: process.env.PORT,
+  jwtSecret: process.env.jwtSecret,
+  email: {
+    user: process.env.emailUser,
+    pass: process.env.emailPass,
+  }
 };

@@ -1,4 +1,4 @@
-const config = require("../config/database.config.js");
+const config = require("../config/default.config.js");
 const nodeoutlook = require('nodejs-nodemailer-outlook');
 const { UserInputError } = require('apollo-server');
 

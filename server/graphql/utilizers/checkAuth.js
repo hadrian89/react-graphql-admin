@@ -1,6 +1,5 @@
 const jwt = require('jsonwebtoken');
-// const config = require('config');
-const config = require("../config/database.config.js");
+const config = require("../config/default.config.js");
 
 const jwtSecret = config.jwtSecret;
 const { AuthenticationError } = require('apollo-server');

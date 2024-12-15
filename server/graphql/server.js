@@ -1,49 +1,9 @@
-// const express = require("express");
-// const { graphqlHTTP } = require("express-graphql");
-// const { buildASTSchema } = require("graphql");
-// const cors = require("cors");
-// const toDoSchema = require("./schema/toDo");
-// const transactionSchema = require("./schema/transaction");
-// const toDoResolvers = require("./resolver/resolver");
-// const transactionResolvers = require("./resolver/transaction");
-
-// // GraphQL schema
-// const schema = buildASTSchema(toDoSchema);
-// const schemaTransaction = buildASTSchema(transactionSchema);
-
-// // Create an express server and a GraphQL endpoint
-// const app = express();
-// app.use(cors());
-// app.use(
-//   "/graphqlApi",
-//   graphqlHTTP({
-//     schema,
-//     rootValue: toDoResolvers,
-//     graphiql: true,
-//   })
-// );
-// app.use(
-//   "/transactionApi",
-//   graphqlHTTP({
-//     schema:schemaTransaction,
-//     rootValue: transactionResolvers,
-//     graphiql: true,
-//   })
-// );
-
-// app.listen(4000, () =>
-//   console.log(
-//     "🚀 Express GraphQL Server now running on localhost:4000/graphqlApi"
-//   )
-// );
-
 const { ApolloServer } = require('apollo-server');
 const { PubSub } = require('graphql-subscriptions');
 const mongoose = require('mongoose');
-const config = require("./config/database.config.js");
+const config = require("./config/default.config.js");
 
-const db = config.url;
-// console.log(config,'db')
+const db = config.dbUrl;
 const typeDefs = require('./typeDefs.js');
 const resolvers = require('./resolvers');
 
