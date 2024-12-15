@@ -10,3 +10,4 @@ package-lock.json
 .env.ddevelopment
 .env.staging
 server/graphql/config/
+server/graphql/config/*
